@@ -31,7 +31,11 @@ header{
     background-color: #444444;
     background-position: center;
 }
-.nav, ol, a{
+
+ol{
+    display: inline;
+}
+.nav, a{
     display: inline;
     text-decoration: none;
     color: #ffffff;
@@ -66,7 +70,6 @@ p, li, ul{
     margin: 10px 4em 2em;
     font-size: 18px;
     line-height: 1.5em;
-    list-style-type: circle;
 }
 
 .container{
