@@ -25,12 +25,6 @@ b{
     position: fixed;
 }
 
-header{
-    background-image: url('./assets/banner.jpeg');
-    padding-bottom: 658px;
-    background-color: #444444;
-    background-position: center;
-}
 
 ol{
     display: inline;
@@ -91,6 +85,9 @@ sub{
     display: block;
     color:white
 }
+.menu-secret{
+    display: none;
+}
 
 .imagen{
     margin: 0 auto 0;
@@ -149,4 +146,34 @@ sub{
     place-items: center;
     transform: translateY(100%);
     transition: transform .3s;
+}
+
+@media (max-width: 770px)and (min-width: 431px) {
+    .nav{
+        margin-left: 43%
+    }
+}
+@media (max-width: 430px) and (min-width: 376px) {
+    .nav{
+        margin-left: 70%;
+        padding: 5px;
+        background-color: #ee3d07;
+    }
+    .nav > a{
+        display: block;
+    }
+    .container{
+        display: block;
+    }
+    p,li,ul{
+        margin: 10px 2em 2em;
+    }
+}
+@media (max-width: 375px) {
+    .nav{
+       display: none;
+    }
+    .container{
+        display: block;
+    }
 }
