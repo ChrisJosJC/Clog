@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang=es>
+
+<head>
+    <title>Clog - I'm Chris</title>
+    <meta property=og:title content="Clog - I'm Chris">
+    <meta property=og:description content="Soy Chris Joseph Jean Carty, actualmente estudio en el Politecnico Pedro Feliciano Martinez en el area de
+			Informatica.">
+    <meta property=og:image
+        content="https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link href=estilos/style.css rel=stylesheet>
+    <link rel="shortcut icon" href=./assets/favicon.ico type=image/x-icon>
+    <link rel=stylesheet href=./estilos/default.css>
+</head>
+
+<body>
+    <header>
+        <div class=nav>
+            <h1 id=clog><b>C</b>log</h1>
+            <div class=links>
+                <a href= />Inicio</a>
+                <a href=proyectos.html>Proyectos</a>
+                <a href=frases.html>Frases</a>
+            </div>
+        </div>
+    </header>
+    <img loading=src=./assets/banner.jpeg alt=Banner width=100%>
+    <div class=center>
+        <h2 id=name>I'm Chris</h2>
+        <p>Soy Chris Joseph Jean Carty, actualmente estudio en el Politecnico Pedro Feliciano Martinez en el area de
+            Informatica. Tengo <i id=edad></i> años, naci el 9 de octubre del 2006.</p>
+        <p style=margin-top:5px;text-align:left>Desde pequeño me ha gustado mucho la tecnologia y aprender acerca de
+            ella con el fin de poe realizar cosas que nunca crei que podria lograr, cosas que para mi yo de 11 años eran
+            ciencia ficcion, comenzando como en la mayoria de casos con el tan famoso <i>"Hola mundo"</i> en el peculiar
+            lenguaje de Java en el computador de mi madre.
+        </p>
+        <h2 style=color:#1391fb>Mis conocimientos</h2>
+        <ul class=container>
+            <div>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Vue 3</li>
+                <li>Photoshop</li>
+            </div>
+            <div>
+                <li>Illustrator</li>
+                <li>Bases del diseño</li>
+                <li>Fotografia</li>
+                <li>Uso de mixers</li>
+                <li>Edicion de fotografia y video</li>
+            </div>
+        </ul>
+        <h2 style=margin-bottom:5px>Mis ultimas frases</h2>
+        <ol class="container orden">
+            <li>
+                <cite>
+                    "Lo importante no es perder, lo importante es arriesgarlo todo aun con miedo y con dudas por lo que
+                    crees correcto, ya que todos perdemos algo en la vida, más no todos nos arriesgamos..."
+                </cite>
+            </li>
+            <div>
+                <li>
+                    <cite>"Temer es el primer paso a lograr cosas extraordinarias, ya que nunca se sabe lo que depara el
+                        futuro."</cite>
+                </li>
+            </div>
+        </ol>
+        <div class=container>
+            <div id=Proyectos class=project>
+                <a href=/proyectos.html>
+                    <div class=imagen></div>
+                </a>
+                <sub>Mis proyectos creativos</sub>
+            </div>
+            <div class=frase>
+                <a href=/frases.html>
+                    <div class=imagen2></div>
+                </a>
+                <sub>Mis escritos y frases</sub>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getEdad(dateString) {
+            let hoy = new Date()
+            let fechaNacimiento = new Date(dateString)
+            let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
+            let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth()
+            if (
+                diferenciaMeses < 0 ||
+                (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())
+            ) {
+                edad--
+            }
+            return edad
+        }
+        document.getElementById("edad").innerHTML = getEdad("2006/10/9 12:00:00")
+    </script>
+</body>
+
+</html>
