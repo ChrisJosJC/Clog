@@ -1,0 +1,52 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<p>
+				Hey there! 👋 <br /><br />I'm a sixteen-year-old web developer
+				with a passion for design and a love for food <span>🍔🍰</span>.
+				In this digital diary, I'm going to share my thoughts,
+				experiences, and everything in between. Whether it's a new
+				coding adventure, a delicious culinary discovery, or just some
+				random musings, you're invited to join me on this exciting
+				journey.
+			</p><br />
+			<p>
+				If you're into web design, you're in the right place! I'll be
+				dishing out tips, tricks, and creative inspiration to help you
+				level up your design game. From UI/UX insights to the latest
+				trends in web development, we've got it all covered.
+			</p><br />
+			<p>
+				But that's not all! This blog is also a space for me to express
+				myself, share my thoughts on life, and connect with fellow
+				enthusiasts. Think of it as a mix of code, cuisine, and candid
+				conversations.
+			</p><br />
+			<p>
+				So, grab a virtual seat at my digital table, and let's embark on
+				this adventure together. <span>🚀</span> Get ready to code,
+				cook, and connect! <span>🍽️💬</span>
+			</p><br />
+			<p>
+				Thanks for dropping by, and I can't wait to share this
+				incredible journey with you. Stay tuned for more! <span
+					>📆📚🌐</span
+				>
+			</p><br />
+		</main>
+
+		<Footer />
+	</body>
+</html>
